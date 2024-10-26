@@ -1,1 +1,129 @@
+/* General Page Styling */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
+/* Style the header, center in the middle, and add white border */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid white;
+}
+
+/* Navigation list (centering items) */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+/* List items with spacing */
+nav ul li {
+    display: flex;
+    align-items: center; /* Vertically center text and separators */
+}
+
+/* Add spacing to list items */
+nav ul li:not(:last-child) {
+    margin-right: 20px; /* Space between items */
+}
+
+/* Styling for links */
+nav ul li a {
+    color: lightgrey; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition on hover */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: white; /* Change color on hover */
+    font-weight: bold; /* Bold on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Main section */
+main {
+    background-color: black;
+    color: white;
+    padding: 50px; /* Add padding to the content */
+    min-height: 100vh; /* Ensure the section covers the full height of the viewport */
+}
+
+/* Header 1 section */
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+/* Paragraph section alignment */
+p {
+    margin-top: 30px;
+}
+
+/* Image section alignment and border*/
+img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 10px white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+
+}
+
+/* Project content (title, description, link) */
+.project-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Project image styling */
+.project-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-content a:hover {
+    font-weight: bold;
+}
+
+/* Contact Section Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+footer h2{
+    text-decoration: underline;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
